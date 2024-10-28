@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <RootNamespace>A3._2._2_EquiposNBA_Estilos</RootNamespace>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>Assets\basketball.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\13_heat.png" />
+    <None Remove="Assets\14_heat.png" />
+    <None Remove="Assets\14_lakers.png" />
+    <None Remove="Assets\22_heat.png" />
+    <None Remove="Assets\23_lakers.png" />
+    <None Remove="Assets\39_lakers.png" />
+    <None Remove="Assets\3_lakers.png" />
+    <None Remove="Assets\7_heat.png" />
+    <None Remove="Assets\99_heat.png" />
+    <None Remove="Assets\9_lakers.png" />
+    <None Remove="Assets\basketball.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Assets\basketball.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\13_heat.png" />
+    <Resource Include="Assets\14_heat.png" />
+    <Resource Include="Assets\14_lakers.png" />
+    <Resource Include="Assets\22_heat.png" />
+    <Resource Include="Assets\23_lakers.png" />
+    <Resource Include="Assets\39_lakers.png" />
+    <Resource Include="Assets\3_lakers.png" />
+    <Resource Include="Assets\7_heat.png" />
+    <Resource Include="Assets\99_heat.png" />
+    <Resource Include="Assets\9_lakers.png" />
+    <Resource Include="Assets\basketball.ico" />
+  </ItemGroup>
+
+</Project>

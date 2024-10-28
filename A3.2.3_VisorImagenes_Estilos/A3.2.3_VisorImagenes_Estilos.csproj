@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <RootNamespace>A3._2._3_VisorImagenes_Estilos</RootNamespace>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>Assets\image.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\episodioIV.jpg" />
+    <None Remove="Assets\image.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Assets\image.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\episodioIV.jpg" />
+    <Resource Include="Assets\image.ico" />
+  </ItemGroup>
+
+</Project>

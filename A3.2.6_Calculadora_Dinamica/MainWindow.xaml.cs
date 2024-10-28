@@ -31,8 +31,7 @@ namespace A3._2._6_Calculadora_Dinamica
                     Button boton = new Button();
                     Grid.SetRow(boton, fila);
                     Grid.SetColumn(boton, columna);
-                    boton.Margin = new Thickness(5);
-                    boton.Click += Button_Click;
+                    boton.Style = (Style)this.Resources["FormatoBotones"];
                     boton.Tag = n;
 
                     //Creamos y configuramos el contenido del botón
@@ -40,10 +39,9 @@ namespace A3._2._6_Calculadora_Dinamica
                     texto.Text = n.ToString();
                     Viewbox box = new Viewbox();
                     box.Child = texto;
-                    
                     boton.Content = box;
 
-                    //Introducimos el botón en el Grid
+                    //Introducimos el botón en el panel Grid.
                     PrincipalGrid.Children.Add(boton);
                 }
             }

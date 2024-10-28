@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <RootNamespace>A3._2._5_Formulario_Estilos</RootNamespace>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>Assets\form.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\form.ico" />
+    <None Remove="Assets\foto.jpg" />
+    <None Remove="Assets\info.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Assets\form.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\form.ico" />
+    <Resource Include="Assets\foto.jpg" />
+    <Resource Include="Assets\info.png" />
+  </ItemGroup>
+
+</Project>

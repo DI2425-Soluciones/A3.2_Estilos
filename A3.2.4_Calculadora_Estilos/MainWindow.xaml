@@ -1,0 +1,118 @@
+﻿<Window x:Class="A3._2._4_Calculadora_Estilos.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:A3._2._4_Calculadora_Estilos"
+        mc:Ignorable="d"
+        Title="Calculadora con estilos"
+        Height="550"
+        Width="450"
+        MinHeight="350"
+        MinWidth="250">
+    
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Margin" Value="5"/>
+            <EventSetter Event="Click" Handler="Button_Click"/>
+        </Style>
+        <Style TargetType="Border">
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="BorderBrush" Value="Black"/>
+        </Style>
+    </Window.Resources>
+    
+    <Grid Margin="5">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Border Grid.Column="0" 
+                Grid.Row="0"
+                Grid.ColumnSpan="3">
+            <Viewbox  HorizontalAlignment="Right">
+                <TextBlock x:Name="resultadoTextBlock"></TextBlock>
+            </Viewbox>
+        </Border>
+        <Button Grid.Row="1"
+                Grid.Column="0"
+                Tag="1">
+            <Viewbox>
+                <TextBlock>1</TextBlock>
+            </Viewbox>
+        </Button>
+        <Button Grid.Row="1"
+                Grid.Column="1"
+                Tag="2">
+            <Viewbox>
+                <TextBlock>2</TextBlock>
+            </Viewbox>
+        </Button>
+        <Button Grid.Row="1"
+                Grid.Column="3"
+                Tag="3">
+            <Viewbox>
+                <TextBlock>3</TextBlock>
+            </Viewbox>
+        </Button>
+        <Button Grid.Row="2"
+                Grid.Column="0"
+                Tag="4">
+            <Viewbox>
+                <TextBlock>4</TextBlock>
+            </Viewbox>
+        </Button>
+        <Button Grid.Row="2"
+                Grid.Column="1"
+                Tag="5">
+            <Viewbox>
+                <TextBlock>5</TextBlock>
+            </Viewbox>
+        </Button>
+        <Button Grid.Row="2"
+                Grid.Column="2"
+                Tag="6">
+            <Viewbox>
+                <TextBlock>6</TextBlock>
+            </Viewbox>
+        </Button>
+        <Button Grid.Row="3"
+                Grid.Column="0"
+                Tag="7">
+            <Viewbox>
+                <TextBlock>7</TextBlock>
+            </Viewbox>
+        </Button>
+        <Button Grid.Row="3"
+                Grid.Column="1"
+                Tag="8">
+            <Viewbox>
+                <TextBlock>8</TextBlock>
+            </Viewbox>
+        </Button>
+        <Button Grid.Row="3"
+                Grid.Column="2"
+                Tag="9">
+            <Viewbox>
+                <TextBlock>9</TextBlock>
+            </Viewbox>
+        </Button>
+        <Button Grid.Row="4"
+                Grid.Column="0"
+                Grid.ColumnSpan="3"
+                Tag="0">
+            <Viewbox>
+                <TextBlock>0</TextBlock>
+            </Viewbox>
+        </Button>
+    </Grid>
+</Window>

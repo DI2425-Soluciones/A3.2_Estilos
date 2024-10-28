@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <RootNamespace>A3._2._6_Calculadora_Dinamica</RootNamespace>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>Assets\numbers.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\numbers.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Assets\numbers.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\numbers.ico" />
+  </ItemGroup>
+
+</Project>

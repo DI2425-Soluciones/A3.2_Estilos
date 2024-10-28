@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "A3.2.4_Calculadora_Estilos"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "A3.2.5_Formulario_Estilos", "A3.2.5_Formulario_Estilos\A3.2.5_Formulario_Estilos.csproj", "{D8AF46DB-27B4-4927-9EBD-07A32E1CC13C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "A3.2.6_Calculadora_Dinamica", "A3.2.6_Calculadora_Dinamica\A3.2.6_Calculadora_Dinamica.csproj", "{ACD60633-42FD-4FFE-9576-217042C1D2A7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{D8AF46DB-27B4-4927-9EBD-07A32E1CC13C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D8AF46DB-27B4-4927-9EBD-07A32E1CC13C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D8AF46DB-27B4-4927-9EBD-07A32E1CC13C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ACD60633-42FD-4FFE-9576-217042C1D2A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACD60633-42FD-4FFE-9576-217042C1D2A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACD60633-42FD-4FFE-9576-217042C1D2A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACD60633-42FD-4FFE-9576-217042C1D2A7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,48 @@
+﻿<Window x:Class="A3._2._6_Calculadora_Dinamica.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:A3._2._6_Calculadora_Dinamica"
+        mc:Ignorable="d"
+        Title="Calculadora - Controles dinámicos"
+        Height="458.631"
+        Width="283.333">
+    
+    <Grid x:Name="PrincipalGrid"
+          Margin="5">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Border Margin="5"
+                BorderThickness="1"
+                BorderBrush="Black"
+                Grid.Column="0"
+                Grid.Row="0"
+                Grid.ColumnSpan="3">
+            <Viewbox  HorizontalAlignment="Right">
+                <TextBlock x:Name="ResultadoTextBlock"></TextBlock>
+            </Viewbox>
+        </Border>
+        <Button Grid.Row="4"
+                Grid.Column="0"
+                Grid.ColumnSpan="3"
+                Margin="5"
+                Tag="0"
+                Click="Button_Click">
+            <Viewbox>
+                <TextBlock>0</TextBlock>
+            </Viewbox>
+        </Button>
+    </Grid>
+
+</Window>
